@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bitcoin Price Prediction</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+
+    <style>
+      .alert {
+        background: green;
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+        margin: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Bitcoin Price Prediction</h3>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+      <form action="/prediction" method="POST">
+        <input type="submit" value="Predict" id="calc_btn" />
+        <br />
+        <div class="alert">
+          {{ Y_pred }}
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
